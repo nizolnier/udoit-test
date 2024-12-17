@@ -159,8 +159,11 @@ const AltText = ({
           {characterCount} {t("form.alt.of")} {maxLength} {t("form.alt.chars")}
         </Text>
       </div>
-      <div as="div" margin="0 0 small 0"><Checkbox isChecked={isDecorative} 
-            onChange={handleCheckbox}>{t('form.alt.mark_decorative')}</Checkbox></div>
+      <div as="div" margin="0 0 small 0">
+        <Checkbox isChecked={isDecorative} onChange={handleCheckbox}>
+          {t("form.alt.mark_decorative")}
+        </Checkbox>
+      </div>
 
       <div as="div" margin="small 0">
         <Button

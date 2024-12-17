@@ -2,6 +2,11 @@ import AltText from "./Components/Forms/AltText";
 import * as React from "react";
 
 import { ChakraProvider } from "@chakra-ui/react";
+import AnchorText from "./Components/Forms/AnchorText";
+import LinkForm from "./Components/Forms/LinkForm";
+import EmphasisForm from "./Components/Forms/EmphasisForm";
+import HeadingEmptyForm from "./Components/Forms/HeadingEmptyForm";
+import HeadingStyleForm from "./Components/Forms/HeadingStyleForm";
 
 export default function App() {
   const obj = {
@@ -556,7 +561,7 @@ export default function App() {
 
   return (
     <ChakraProvider>
-      <AltText
+      <HeadingStyleForm
         activeIssue={obj}
         t={print}
         handleActiveIssue={handleActiveIssue}
